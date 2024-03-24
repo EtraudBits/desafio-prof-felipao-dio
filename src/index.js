@@ -25,4 +25,7 @@ Saída
 Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**"
 */
-console.log("Desafio Felipão")
+let nomeDoHeroi = "Duarte Oliveira";
+let nivel = ["ferro", "broze", "prata", "ouro", "platina", "ascedente", "imortal", "radiante"];
+let fraseFinal = "O herói " + nomeDoHeroi + " esta no nível de " + nivel[7];
+console.log (fraseFinal);
