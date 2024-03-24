@@ -26,6 +26,35 @@ Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**"
 */
 let nomeDoHeroi = "Duarte Oliveira";
-let nivel = ["ferro", "broze", "prata", "ouro", "platina", "ascedente", "imortal", "radiante"];
-let fraseFinal = "O herói " + nomeDoHeroi + " esta no nível de " + nivel[7];
+
+let xp = 15000;
+
+let nivel;
+
+    if (xp <= 1000){
+        nivel = "Ferro";
+    }
+        else if (xp >= 1001 && xp<=2000) {
+            nivel = "Broze";
+        }
+        else if (xp >= 2001 && xp<=5000) {
+            nivel = "Prata";
+        }
+        else if (xp >= 5001 && xp<=7000) {
+            nivel = "Ouro";
+        }
+        else if (xp >= 7001 && xp<=8000) {
+            nivel = "Platina";
+        }
+        else if (xp >= 8001 && xp<=9000) {
+            nivel = "Ascendente";
+        }
+        else if (xp >= 9001 && xp<=10000) {
+            nivel = "Imortal";
+        }
+        else if (xp >= 10001){
+            nivel = "Radiante";
+        }
+        
+let fraseFinal = "O herói " + nomeDoHeroi + ", tem o xp de: "+ xp + ", esta no nível de " + nivel + "!";
 console.log (fraseFinal);
